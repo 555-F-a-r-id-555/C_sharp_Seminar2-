@@ -8,10 +8,11 @@
 
 void my_function(int num)
 {
+    num = Math.Abs(num);
     Console.WriteLine($"{num} -> {(num / 10) % 10}");
 }
 
-my_function(456); // 5
+my_function(-456); // 5
 my_function(782); // 8
 my_function(918); // 1
 // --------------
